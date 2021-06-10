@@ -1,0 +1,104 @@
+.container {
+  position: relative;
+}
+.image-side {
+  img {
+    border-radius: 2rem 2rem 0 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.text-side {
+  border-radius: 0 0 2rem 2rem;
+  h2 {
+    color: $very-Dark-Grayish-Blue;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  p {
+    color: $desaturated-Dark-Blue;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // height: 5rem;
+    .opent {
+      width: 20px;
+      height: 20px;
+    }
+    .open {
+      height: 9rem;
+      padding: 3rem;
+      overflow: auto;
+    }
+    ul {
+      overflow-y: hidden;
+      background-image: none;
+      overflow-y: hidden;
+      list-style: none;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      background: $very-Dark-Grayish-Blue;
+      left: 0;
+      bottom: 0;
+      height: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      border-radius: 0 0 2rem 2rem;
+      transition: all 0.3s ease-in-out;
+      .mdn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+
+        h5 {
+          color: $grayish-Blue;
+          letter-spacing: 1rem;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .mach {
+      display: flex;
+      align-items: center;
+      img {
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        margin-right: 2.5rem;
+      }
+      .name-date {
+        line-height: 1.5;
+        h3 {
+          font-size: 1.5rem;
+          color: $grayish-Blue;
+        }
+        h1 {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $very-Dark-Grayish-Blue;
+        }
+      }
+    }
+    .share {
+      cursor: pointer;
+    }
+  }
+  padding: 3rem;
+  background: #ffff;
+}

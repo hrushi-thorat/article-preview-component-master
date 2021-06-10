@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.2%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: #ecf2f8;
+  padding: 5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  position: relative;
+}
+
+.image-side img {
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-side {
+  border-radius: 0 0 2rem 2rem;
+  padding: 3rem;
+  background: #ffff;
+}
+
+.text-side h2 {
+  color: #48556a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.text-side p {
+  color: #6d7f97;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.text-side .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-side .author .opent {
+  width: 20px;
+  height: 20px;
+}
+
+.text-side .author .open {
+  height: 9rem;
+  padding: 3rem;
+  overflow: auto;
+}
+
+.text-side .author ul {
+  overflow-y: hidden;
+  background-image: none;
+  overflow-y: hidden;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background: #48556a;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  border-radius: 0 0 2rem 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-side .author ul .mdn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.text-side .author ul .mdn h5 {
+  color: #9eafc2;
+  letter-spacing: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.text-side .author .mach {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-side .author .mach img {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  margin-right: 2.5rem;
+}
+
+.text-side .author .mach .name-date {
+  line-height: 1.5;
+}
+
+.text-side .author .mach .name-date h3 {
+  font-size: 1.5rem;
+  color: #9eafc2;
+}
+
+.text-side .author .mach .name-date h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #48556a;
+}
+
+.text-side .author .share {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    max-width: 60%;
+    margin: auto;
+  }
+  .container .image-side img {
+    border-radius: 2rem 0 0 2rem;
+  }
+  .container .text-side {
+    border-radius: 0 2rem 2rem 0;
+  }
+  .container .text-side ul {
+    width: 30%;
+    left: 75%;
+    bottom: 32%;
+    border-radius: 1.5rem;
+    width: 40%;
+  }
+  .container .text-side ul #removeBtn {
+    display: none;
+  }
+  .container .text-side ul .mdn {
+    width: 100%;
+  }
+  .container .text-side .author .open {
+    height: 7rem;
+    padding: 2rem;
+  }
+  .triangle {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background-color: #48556a;
+    bottom: 29%;
+    left: 94%;
+    -webkit-transform: rotate(0deg) rotate(45deg);
+            transform: rotate(0deg) rotate(45deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+/*# sourceMappingURL=style.css.map */
